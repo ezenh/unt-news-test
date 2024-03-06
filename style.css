@@ -30,7 +30,7 @@ main {
     display: flex;
     flex-direction: column;
     margin: auto;
-    overflow: hidden;
+
     }
 
 
@@ -39,7 +39,9 @@ section {
     width: 95vw;
     aspect-ratio: 1/1;
     scroll-snap-type: x mandatory;
-    overflow: hidden;
+    overflow: auto;
+    overflow-y: hidden;
+
     }
 
 article {
@@ -47,6 +49,7 @@ article {
     position: relative;
     aspect-ratio: 1/1;
     scroll-snap-align: center;
+
     
     }
     .front {
@@ -57,7 +60,7 @@ article {
     }
     #video1 {
         position: absolute;
-        height: 110%;
+        height: 111%;
         margin-left: -450px;
     }
     #video3 {
