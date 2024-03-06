@@ -29,34 +29,30 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    width: 95vw;
-    height: 95vh;
     margin: auto;
-    /* background-color: rgb(34, 34, 109); */
-    overflow: auto;
+    overflow: hidden;
     }
 
 
 section {
     display: flex;
     width: 95vw;
-    height: 95vh;
-    overflow: scroll;
+    aspect-ratio: 1/1;
     scroll-snap-type: x mandatory;
+    overflow: hidden;
     }
 
 article {
     display: flex;
     position: relative;
-    flex-direction: column;
-    width: 95vw;
-    height: 95vh;
+    aspect-ratio: 1/1;
     scroll-snap-align: center;
+    
     }
     .front {
         display: flex;
         width: 95vw;
-        height: 95vh;
+        aspect-ratio: 1/1;
         z-index: 100;
     }
     #video1 {
