@@ -15,9 +15,9 @@ html {
 
 
 @keyframes zoom {
-    0% { transform: scale(0.8);}
-    50% { transform: scale(1.2);}
-    100% { transform: scale(0.8);}
+    0% { transform: scale(0.4);}
+    50% { transform: scale(0.8);}
+    100% { transform: scale(0.4);}
 }
 
 body {
@@ -49,80 +49,83 @@ article {
     position: relative;
     aspect-ratio: 1/1;
     scroll-snap-align: center;
-
-    
     }
     .front {
         display: flex;
         width: 95vw;
         aspect-ratio: 1/1;
         z-index: 100;
-    }
+        }
     #video1 {
         position: absolute;
         height: 111%;
-        margin-left: -450px;
-    }
+        left: -260px;
+        }
+    #video2 {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        }
     #video3 {
         position: absolute;
         height: 100%;
-        margin-left: -350px;
-        z-index: -20;
+        left: -200px;
+        z-index: -30;
         }  
     .video {
         position: absolute;
-        background-image: url('./assets/images/art2-bg-image.png');
+        background-image: url('./assets/images/videoart2.mp4');
         background-size: cover;
         width: 100%;
         aspect-ratio: 1/1;
         z-index: 90;
         }
-        .video .cloudanimation {
-            animation-name: zoom;
+        .video .cloudanimation, .dotanimation {
+            position: relative;
+            /* animation-name: zoom; */
             animation-iteration-count: infinite;
             animation-duration: 2.3s;
-            transform: scale(0.8);
+            transform: scale(0.4);
             }
         .video .crayoneo {
-            position: absolute;
-            margin-top: 580px;
-            margin-left: 23px;
+            top: 340px;
+            /* left: -3%; */
             }
         .video .puzzle {
-            position: absolute;
-            margin-top: 456px;
-            margin-left: 40px;
+            top: 262px;
+            left: 5px;
             animation-delay: 1s;
             }
         .video .rayos {
-            position: absolute;
-            margin-top: 380px;
-            margin-left: 150px;
+            top: 215px;
+            left: 75px;
             animation-delay: 2s;
 
             }
         .video .battery {
-            position: absolute;
-            margin-top: 380px;
-            margin-left: 280px;
+            top: 15vw;
+            left: 155px;
             animation-delay: 3s;
-
+            width: 25vw;
             }
         .video .heart {
-            position: absolute;
-            margin-top: 460px;
-            margin-left: 395px;
+            top: 268px;
+            left: 220px;
             animation-delay: 4s;
 
             }
         .video .eyes {
-            position: absolute;
-            margin-top: 580px;
-            margin-left: 415px;
-            width: 100px;
+            top: 340px;
+            left: 235px;
             animation-delay: 5s;
             }
 
+        .video .dotanimation {
+            width: 10px;
+            aspect-ratio: 1/1;
+            background-color: white;
+            } 
+            .video .dot1 {}
 
 
 
