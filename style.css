@@ -75,7 +75,7 @@ article {
         background-image: url('./assets/images/art2-bg-image.png');
         background-size: cover;
         width: 100%;
-        height: 100%;
+        aspect-ratio: 1/1;
         z-index: 90;
         }
         .video .cloudanimation {
