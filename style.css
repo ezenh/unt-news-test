@@ -29,8 +29,8 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    width: 1080px;
-    height: 1080px;
+    width: 95vw;
+    height: 95vh;
     margin: auto;
     /* background-color: rgb(34, 34, 109); */
     overflow: auto;
